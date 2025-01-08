@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16sp">
+
+    <Button
+        android:id="@+id/backToListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6700CE"
+        android:textColor="#FFFFFF"
+        android:text="Back"/>
+
+    <Button
+        android:id="@+id/deleteTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6700CE"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentEnd="true"
+        android:text="Delete Task"/>
+
+    <EditText
+        android:id="@+id/detailTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/backToListButton"
+        android:paddingBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/itemContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/detailTitleEditText"
+        android:layout_above="@+id/saveButton"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#6700CE"
+        android:textColor="#FFFFFF"
+        android:text="Save Changes"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
