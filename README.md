@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/6cda5665-f399-4c70-9176-3ab916993f8d
+
 # Task_Management
 An Android app built with **Kotlin** that allows users to manage tasks dynamically and displays real-time weather data using an API.
 
