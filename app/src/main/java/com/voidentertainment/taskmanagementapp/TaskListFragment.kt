@@ -80,7 +80,7 @@ open class TaskListFragment : Fragment() {
             .build()
 
         val service = retrofit.create(WeatherService::class.java)
-        val call = service.getCurrentWeather(latitude, longitude, "9b0b1dc780b1f6ea1b4f447cca1a5b5b")
+        val call = service.getCurrentWeather(latitude, longitude, "PLEASE INPUT YOUR OPENWEATHER API KEY HERE")
 
         call.enqueue(object : Callback<WeatherResponse> {
             override fun onResponse(call: Call<WeatherResponse>, response: Response<WeatherResponse>) {
